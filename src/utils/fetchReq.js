@@ -3,7 +3,7 @@
 //create user fetch request 
 export const createUser = async (username, email, password, setUser, user )=>{//setImageUrl, urlInput, imageUrl
 
-    console.log("fetch hit", username);
+    console.log("fetch hit", username, password);
     try {
         const res = await fetch(`${process.env.REACT_APP_REST_API}user`, {
             method:"POST",

@@ -1,59 +1,90 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+.login-background{
+    background: radial-gradient(#c72020, #21287c);
+    width: 100vw;
+    height: 100vh;
+}
 
 .bg-image {
+    position: absolute;top: 50%;left: 50%;
+    transform: translate(-50%, -50%);
     background-image: url(./images/bg-image-logorsign.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     background-position: center;
-    max-width: 1600px;
-min-height: 750px;
+    width: 1100px;
+    height: 500px;
+    border-radius: 15px;
+ 
+    border: solid 4px;
+    border-image-source: linear-gradient(to bottom right, hotpink, blue);
+    border-image-slice: 4
 }
 
 .content-flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100vh;
+display:flex;
 }
 
 .gigbuddy-logorsign-title {
+    font-family: 'Kanit', sans-serif;
+    font-weight:400;
     text-align: center;
     color: rgba(34, 34, 34, 0.905);
     font-size: 5em;
-    padding: 10px;
+
 }
 
 .form-container{
-    max-width: 650px;
+    position: relative;
     display: flex;
     flex-direction: column;
-    row-gap: 3em;
-    height: 100%;
-    background: #0f93e067;
-    padding: 45px 180px 0 180px;
     box-shadow: 0 0 20px 0 rgba(84, 143, 214, 0.422), 0 3px 3px 0 rgba(57, 104, 206, 0.24);
+    background-color: #21297c71;
+    height: 492px;
+    width: 600px;
+
+}
+
+.page-description {
+    font-size: 6em;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: #f2f2f2;
+    text-align: center;
+    align-content:center;
+    padding: 25px;
 }
 
 .login-form {
     display: flex;
+padding-top: 35px;
     flex-direction: column;
     align-items:center;
+    gap:30px;
 }
 
 .logorsign-input { 
     margin: 5px;
-    min-width: 250px;
+    min-width: 350px;
     font-family: "Roboto";
-    border-radius: 5px;
-    height: auto;
-    background-color: #f2f2f2;
+    
+   color:white;
+    background: none;
     border: none;
     padding: 10px 30px;
     width: 50%;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    border-bottom: white solid 4px;
 }
-
+.logorsign-input::placeholder {
+    letter-spacing:0.3rem;
+    color: rgb(255, 255, 255);
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+}
 .signlog-icons {
     position: relative;
     right: 110px;
@@ -61,6 +92,7 @@ min-height: 750px;
 }
 
 .find-buddy-text {
+
     font-size: 2em;
     text-align: center;
 }
@@ -116,7 +148,7 @@ min-height: 750px;
 
 .small-text {
     font-size: 16px;
-    margin-top: 30px;
+
     font-family: 'Roboto', sans-serif;
     color: white;
 }
@@ -126,23 +158,16 @@ min-height: 750px;
     background-color: rgba(34, 34, 34, 0.564);
 }
 
-.page-description {
-    font-size: 6em;
-    font-weight: 900;
-
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bolder;
-    color: #f2f2f2;
-    height: 100%;
-    padding: 170px;
-    text-align: center;
-}
 
 .text{
     font-family: 'Roboto', sans-serif;
     color: white;
 }
 
-
+.description-container{
+    display: flex;
+    align-content:center;
+    align-items:center;
+}
 
 

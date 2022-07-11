@@ -30,7 +30,7 @@ const Navbar = ({ imageUrl,displayEvent, setDisplayEvent, value, setValue, apiDa
             <SearchBar displayEvent={displayEvent} setDisplayEvent={setDisplayEvent} value={value} setValue={setValue} apiData={apiData}/>
         <nav className='navbar'>
             <ul className='navbar-links'>
-            <BuddyList user={user} setUser={setUser} />
+         
                 {/* Calling the message icon from React icons */}
                 <li><Link to="/messages"><MdMessage size={40} className='message-icon' color='white' /></Link></li>
                 {/* Placeholder image that will be the user profile picture */}

@@ -76,8 +76,8 @@ const [eventId, setEventId] = useState ("")
         <Route path="/buddySwipe" element={ <BuddySwipe user={user}  imageUrl= {imageUrl} allUsers={allUsers} trendingEvents={trendingEvents}/>} />
         {/* setEventId={setEventId} eventId={eventId} */}
         <Route path="/popular" element={ <PopularEvents setDisplayEvent={setDisplayEvent} setValue={setValue} trendingEvents={trendingEvents}/>} />
-      
        </Routes>
+       <BuddyList user={user} setUser={setUser} />
    </>
   
    :

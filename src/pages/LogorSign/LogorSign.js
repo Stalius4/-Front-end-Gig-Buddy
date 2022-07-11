@@ -34,7 +34,7 @@ export const LogOrSign = ({ user, setUser }) => {
     // switch between log in page and sign up page
     const [logSwitch, setlogSwitch] = useState(true);
     return (
-      <>
+      <div className="login-background">
         {logSwitch ? (
           <div className="bg-image">
             {/* <h1 className="gigbuddy-logorsign-title">Gig Buddy</h1> */}
@@ -42,19 +42,19 @@ export const LogOrSign = ({ user, setUser }) => {
               <div className="form-container">
                 <h1 className="gigbuddy-logorsign-title">Gig Buddy</h1>
                 <form className="login-form" onSubmit={submitHandlerLogin}>
-                  <h1 className="text">Log In</h1>
-                  <FaUser className="signlog-icons" />
+                
+                
                   <input
                     type="text"
                     className="logorsign-input"
-                    placeholder="Username"
+                    placeholder="USERNAME"
                     onChange={(e) => setUserName(e.target.value)}
                   />
-                  <RiLockPasswordFill className="signlog-icons" />
+                
                   <input
                     type="password"
                     className="logorsign-input"
-                    placeholder="Password"
+                    placeholder="PASSWORD"
                     onChange={(e) => setPassword(e.target.value)}
                   />
                   <button className="form-btn">Submit</button>
@@ -79,8 +79,9 @@ export const LogOrSign = ({ user, setUser }) => {
           <div className="bg-image">
             {/* <h1 className="gigbuddy-logorsign-title">Gig Buddy</h1> */}
             <div className="content-flex">
+              <h1 className="gigbuddy-logorsign-title">Gig Buddy</h1>
               <section className="form-container">
-                <h1 className="gigbuddy-logorsign-title">Gig Buddy</h1>
+               
                 <form className="login-form" onSubmit={submitHandlerCreate}>
                   <h1 className="find-buddy-text">Find your Gig Buddy</h1>
                   <h1 className="text">Create Account</h1>
@@ -124,7 +125,7 @@ export const LogOrSign = ({ user, setUser }) => {
             </div>
           </div>
         )}
-      </>
+      </div>
     );
   } catch (error) {
     console.log(error);
